@@ -9,17 +9,6 @@
 CurricuMT es una plataforma web orientada a la gestión digital de currículums y ofertas de empleo. Permite a los usuarios enviar su información profesional y a los administradores gestionar tanto los currículums como las ofertas disponibles.
 
 **👥 Reparto de tareas**
-------------------------**CurricuMT🌐**
-===============
-
-**Proyecto realizado para el Reto 2 del ciclo formativo DAM (1DM3)**
-
-**🧠 Descripción**
-------------------
-
-CurricuMT es una plataforma web orientada a la gestión digital de currículums y ofertas de empleo. Permite a los usuarios enviar su información profesional y a los administradores gestionar tanto los currículums como las ofertas disponibles.
-
-**👥 Reparto de tareas**
 ------------------------
 
 Cada integrante del grupo ha tenido un rol definido dentro del desarrollo del proyecto:
