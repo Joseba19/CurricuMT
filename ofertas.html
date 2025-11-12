@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/ofertas.css">
+</head>
+
+<body>
+    <ul class="navbar">
+        <div class="links">
+            <li><a href="index.html" class="paginas">Inicio</a></li>
+            <li><a href="ofertas.html" class="paginas">Ofertas de Trabajo</a></li>
+            <li><a href="cv.html" class="paginas">Sube tu CV</a></li>
+            <li><a href="InicioSesion.html" class="paginas">Administradores</a></li>
+        </div>
+        <div class="logo">
+            <li><a href="index.html"><img src="resources/logoPositivo.png" alt=""
+                        style="height:50px; vertical-align:middle;"></a></li>
+        </div>
+    </ul>
+
+    <h1>Ofertas de Trabajo</h1>
+    <p class="descripcion">Encuentra las mejores oportunidades laborales según tu perfil.</p>
+    <select name="sector-oferta" id="sector-oferta" class="sector-oferta" onchange="seleccionar()">
+        <option value="Sector">Sector de la Oferta</option>
+        <option value="Ingenieria">Ingenieria</option>
+        <option value="Informatica">Informatica</option>
+        <option value="Administracion">Administración-Finanzas</option>
+        <option value="IndustriaMetal">Industria del metal</option>
+        <option value="Sanitario">Sector Sanitario</option>
+    </select>
+
+    <div class="container">
+        <div class="oferta-card" id="oferta1">
+            <img src="resources/cafLogo.png" alt="" height="150px">
+            <div class="info-oferta">
+                <h2>Tecnico Informatico</h2>
+                <h3>Construcciones y Auxiliar de Ferrocarriles S. A.</h3>
+                <p><b> <i class="fa-solid fa-location-dot"></i> Irun | <i class="fa-solid fa-briefcase"></i> Presencial
+                        | <i class="fa-regular fa-calendar"></i> 08/11/2025</b></p>
+                <p class="descripcion-oferta">Explicacion del puesto de trabajo. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Aliquam volutpat risus id leo commodo, ut molestie nisl semper. Aliquam mollis,
+                    massa et fringilla dictum, dui lectus aliquet ligula, vitae gravida lorem eros sed nunc.</p>
+                <p><b> <i class="fa-regular fa-file"></i> Contrato Indefinido | <i class="fa-regular fa-clock"></i>
+                        08:00 - 16:00 | <i class="fa-regular fa-money-bill-1"></i> 1.400€</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta2">
+            <img src="resources/ElytraLogo.png" alt="" height="150px">
+            <div class="info-oferta">
+                <h2>Ingeniero Industrial</h2>
+                <h3>Elytra S.A.</h3>
+                <p><b> <i class="fa-solid fa-location-dot"></i> Lezo | <i class="fa-solid fa-briefcase"></i> Presencial
+                        | <i class="fa-regular fa-calendar"></i> 08/11/2025</b></p>
+                <p class="descripcion-oferta">Explicacion del puesto de trabajo. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Aliquam volutpat risus id leo commodo, ut molestie nisl semper. Aliquam mollis,
+                    massa et fringilla dictum, dui lectus aliquet ligula, vitae gravida lorem eros sed nunc.</p>
+                <p><b> <i class="fa-regular fa-file"></i> Contrato Indefinido | <i class="fa-regular fa-clock"></i>
+                        09:00 - 17:00 | <i class="fa-regular fa-money-bill-1"></i> 1.600€</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta3">
+            <img src="resources/cafLogo.png" alt="" height="150px">
+            <div class="info-oferta">
+                <h2>Montador-Instalador</h2>
+                <h3>Construcciones y Auxiliar de Ferrocarriles (CAF)</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Beasain | <i class="fa-solid fa-briefcase"></i>
+                        Presencial | <i class="fa-regular fa-calendar"></i> 2 días</b></p>
+                <p class="descripcion-oferta">Si te gusta la fabricación de estructuras metálicas, imagínate ensamblando
+                    piezas en el mundo de la automoción y el ferroviario. Te ocuparás del ensamblaje completo de los
+                    trenes y serás responsable de que pasen todos los controles de calidad. Requiere FPII y nivel medio
+                    de inglés.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa - 3 turnos | <i class="fa-regular fa-money-bill-1"></i> Salario no
+                        disponible</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta4">
+            <img src="resources/Matia.png" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Técnico/a de Farmacia</h2>
+                <h3>Matia Fundazioa</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Donostia-San Sebastián | <i
+                            class="fa-solid fa-briefcase"></i> Presencial | <i class="fa-regular fa-calendar"></i> 5
+                        días</b></p>
+                <p class="descripcion-oferta">Acompañar a las personas en su proceso de envejecimiento. Preparar pedidos
+                    de medicamentos, gestión de inventarios, recepción de pedidos, etc.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato temporal | <i class="fa-regular fa-clock"></i> Jornada
+                        parcial | <i class="fa-regular fa-money-bill-1"></i> Salario no disponible</b></p>
+                <button onclick="verOferta('tecnico-farmacia-matia')">Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta5">
+            <img src="resources/cafLogo.png" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Gestor/a Ofertas de Compras</h2>
+                <h3>Construcciones y Auxiliar de Ferrocarriles (CAF)</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Beasain | <i class="fa-solid fa-briefcase"></i> Mixto |
+                        <i class="fa-regular fa-calendar"></i> 1 semana</b></p>
+                <p class="descripcion-oferta">Incorporación al staff de compras del negocio de vehículos. Gestión de
+                    inventario y stock, movilidad sostenible como objetivo principal.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa | <i class="fa-regular fa-money-bill-1"></i> Salario no disponible</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta6">
+            <img src="resources/CSA logo.jpg" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Programador/a Python</h2>
+                <h3>CSA (Centro de Servicios Avanzados)</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Burgos | <i class="fa-solid fa-briefcase"></i> Mixto | <i
+                            class="fa-regular fa-calendar"></i> 15 días</b></p>
+                <p class="descripcion-oferta">Desarrollo de aplicaciones Python con más de 3 años de experiencia. Plan
+                    de carrera, formación y flexibilidad horaria.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa | <i class="fa-regular fa-money-bill-1"></i> 30.000€ Bruto/año</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta7">
+            <img src="resources/ISPROX logo.jpg" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Técnico/a Contabilidad y Finanzas</h2>
+                <h3>ISPROX</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Tárrega (Lleida) | <i class="fa-solid fa-briefcase"></i>
+                        Mixto | <i class="fa-regular fa-calendar"></i> Nuevo</b></p>
+                <p class="descripcion-oferta">Empresa industrial busca técnico/a en contabilidad y finanzas con inglés
+                    avanzado y titulación en ADE.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa | <i class="fa-regular fa-money-bill-1"></i> 24.000€ - 33.000€ Bruto/año</b>
+                </p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta8">
+            <img src="resources/DomusVi logo.png" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Fisioterapeuta</h2>
+                <h3>Zaharren egoitza DomusVi</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Donostia-San Sebastián | <i
+                            class="fa-solid fa-briefcase"></i> Presencial | <i class="fa-regular fa-calendar"></i> 4
+                        días</b></p>
+                <p class="descripcion-oferta">Rehabilitación fisiológica, atención personalizada según necesidades. Se
+                    valora geriatría, neurología o pilates.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa / parcial | <i class="fa-regular fa-money-bill-1"></i> Salario no
+                        disponible</b>
+                </p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta9">
+            <img src="resources/charifas logo.png" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Social / Community Manager</h2>
+                <h3>Las Charifas S.A.</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Santa Cruz de Tenerife | <i
+                            class="fa-solid fa-briefcase"></i> Teletrabajo | <i class="fa-regular fa-calendar"></i> 3
+                        días</b></p>
+                <p class="descripcion-oferta">Gestionar la presencia digital y la comunidad online de Chafiras, creando
+                    contenido atractivo
+                    y relevante que refuerce la identidad de marca y apoye las acciones comerciales y de comunicación en
+                    los
+                    distintos canales digitales. <br>
+                    Funciones:Planificar, crear y programar contenido para redes sociales y otros canales digitales
+                    (Facebook,
+                    Instagram, LinkedIn...).
+                    Gestionar la comunidad online. Coordinar y ejecutar campañas digitales. Entre otras. </p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa | <i class="fa-regular fa-money-bill-1"></i> Salario no disponible</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+        <div class="oferta-card" id="oferta10">
+            <img src="resources/Veiru logo.jpg" alt="" width="150px" height="150px">
+            <div class="info-oferta">
+                <h2>Fresador CNC Mecanizado Aeronáutico</h2>
+                <h3>Veiru S.L.U.</h3>
+                <p><b><i class="fa-solid fa-location-dot"></i> Meco (Madrid) | <i class="fa-solid fa-briefcase"></i>
+                        Presencial | <i class="fa-regular fa-calendar"></i> 12 días</b></p>
+                <p class="descripcion-oferta">Fresador CNC 3, 4 y 5 ejes. Incorporación inmediata. Experiencia mínima de
+                    3 años como preparador ajustador independiente.</p>
+                <p><b><i class="fa-regular fa-file"></i> Contrato indefinido | <i class="fa-regular fa-clock"></i>
+                        Jornada completa (3 turnos) | <i class="fa-regular fa-money-bill-1"></i> 27.000€ - 36.000€
+                        Bruto/año</b></p>
+                <button>Ver Oferta</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Guardar el contenido original una vez
+        const oferta1Original = document.getElementById("oferta1").innerHTML;
+        const oferta2Original = document.getElementById("oferta2").innerHTML;
+        const oferta3Original = document.getElementById("oferta3").innerHTML;
+        const oferta4Original = document.getElementById("oferta4").innerHTML;
+        const oferta5Original = document.getElementById("oferta5").innerHTML;
+        const oferta6Original = document.getElementById("oferta6").innerHTML;
+        const oferta7Original = document.getElementById("oferta7").innerHTML;
+        const oferta8Original = document.getElementById("oferta8").innerHTML;
+        const oferta9Original = document.getElementById("oferta9").innerHTML;
+        const oferta10Original = document.getElementById("oferta10").innerHTML;
+
+        function seleccionar() {
+            const oferta1 = document.getElementById("oferta1");
+            const oferta2 = document.getElementById("oferta2");
+            const oferta3 = document.getElementById("oferta3");
+            const oferta4 = document.getElementById("oferta4");
+            const oferta5 = document.getElementById("oferta5");
+            const oferta6 = document.getElementById("oferta6");
+            const oferta7 = document.getElementById("oferta7");
+            const oferta8 = document.getElementById("oferta8");
+            const oferta9 = document.getElementById("oferta9");
+            const oferta10 = document.getElementById("oferta10");
+            const sector = document.getElementById("sector-oferta").value;
+
+            oferta1.innerHTML = oferta1Original;
+            oferta2.innerHTML = oferta2Original;
+            oferta3.innerHTML = oferta3Original;
+            oferta4.innerHTML = oferta4Original;
+            oferta5.innerHTML = oferta5Original;
+            oferta6.innerHTML = oferta6Original;
+            oferta7.innerHTML = oferta7Original;
+            oferta8.innerHTML = oferta8Original;
+            oferta9.innerHTML = oferta9Original;
+            oferta10.innerHTML = oferta10Original;
+
+            oferta1.style.display = "flex";
+            oferta2.style.display = "flex";
+            oferta3.style.display = "flex";
+            oferta4.style.display = "flex";
+            oferta5.style.display = "flex";
+            oferta6.style.display = "flex";
+            oferta7.style.display = "flex";
+            oferta8.style.display = "flex";
+            oferta9.style.display = "flex";
+            oferta10.style.display = "flex";
+
+            if (sector === "Informatica") {
+                oferta1.innerHTML = oferta1Original;
+                oferta2.style.display = "none";
+                oferta3.style.display = "none";
+                oferta4.style.display = "none";
+                oferta5.style.display = "none";
+                oferta6.style.display = oferta6Original;
+                oferta7.style.display = "none";
+                oferta8.style.display = "none";
+                oferta9.style.display = oferta9Original;
+                oferta10.style.display = "none";
+            }
+            else if (sector === "Ingenieria") {
+                oferta1.style.display = "none";
+                oferta2.style.display = oferta2Original;
+                oferta3.style.display = "none";
+                oferta4.style.display = "none";
+                oferta5.style.display = "none";
+                oferta6.style.display = "none";
+                oferta7.style.display = "none";
+                oferta8.style.display = "none";
+                oferta9.style.display = "none";
+                oferta10.style.display = "none";
+            }
+            else if (sector === "Administracion") {
+                oferta1.style.display = "none";
+                oferta2.style.display = "none";
+                oferta3.style.display = "none";
+                oferta4.style.display = "none";
+                oferta5.style.display = oferta5Original;
+                oferta6.style.display = "none";
+                oferta7.style.display = oferta7Original;
+                oferta8.style.display = "none";
+                oferta9.style.display = "none";
+                oferta10.style.display = "none";
+            }
+            else if (sector === "IndustriaMetal") {
+                oferta1.style.display = "none";
+                oferta2.style.display = "none";
+                oferta3.style.display = oferta3Original;
+                oferta4.style.display = "none";
+                oferta5.style.display = "none";
+                oferta6.style.display = "none";
+                oferta7.style.display = "none";
+                oferta8.style.display = "none";
+                oferta9.style.display = "none";
+                oferta10.style.display = oferta10Original;
+            }
+            else if (sector === "Sanitario") {
+                oferta1.style.display = "none";
+                oferta2.style.display = "none";
+                oferta3.style.display = "none";
+                oferta4.style.display = oferta4Original;
+                oferta5.style.display = "none";
+                oferta6.style.display = "none";
+                oferta7.style.display = "none";
+                oferta8.style.display = oferta8Original;
+                oferta9.style.display = "none";
+                oferta10.style.display = "none";
+            }
+            else {
+                // Si seleccionas "Todos" o nada, restablece todo
+                oferta1.innerHTML = oferta1Original;
+                oferta2.innerHTML = oferta2Original;
+                oferta3.innerHTML = oferta3Original;
+            }
+        }
+
+        // Añade esta función al script existente
+        function verOferta(idOferta) {
+            // Redirige a la página individual de la oferta
+            window.location.href = `oferta-${idOferta}.html`;
+        }
+
+    </script>
+
+</body>
+
+</html>

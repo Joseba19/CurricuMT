@@ -1,0 +1,72 @@
+/* Selector de sector */
+.sector-oferta {
+    display: block;
+    margin: 15px auto 0px;
+    padding: 10px 14px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23999' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sector-oferta:hover {
+    border-color: #aaa;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sector-oferta:focus {
+    outline: none;
+    border-color: #5b8def;
+    box-shadow: 0 0 0 3px rgba(91, 141, 239, 0.3);
+}
+
+.sector-oferta option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sector-oferta option:hover {
+    background-color: #f2f2f2;
+}
+
+.descripcion {
+    text-align: center;
+    color: #555;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* Tarjetas de ofertas */
+.oferta-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.info-oferta {
+    margin-left: 40px;
+}
+
+.descripcion-oferta {
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;
+}

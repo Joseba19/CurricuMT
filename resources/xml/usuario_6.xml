@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Paula Fernández</nombre>
+  <edad>26</edad>
+  <email>paulafernandez@gmail.com</email>
+  <telefono>662345678</telefono>
+  <experiencia>2 años como administradora de bases de datos</experiencia>
+  <estudios>
+    <curso>DAM</curso>
+    <curso>SQL Server</curso>
+  </estudios>
+</usuario>

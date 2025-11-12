@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico/a de Farmacia - Matia Fundazioa | CurricuMT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/oferta-detalles.css">
+</head>
+<body>
+    <ul class="navbar">
+        <div class="links">
+            <li><a href="index.html" class="paginas">Inicio</a></li>
+            <li><a href="ofertas.html" class="paginas">Ofertas de Trabajo</a></li>
+            <li><a href="cv.html" class="paginas">Sube tu CV</a></li>
+            <li><a href="InicioSesion.html" class="paginas">Administradores</a></li>
+        </div>
+        <div class="logo">
+            <li><a href="index.html"><img src="resources/logoPositivo.png" alt="CurricuMT" style="height:50px; vertical-align:middle;"></a></li>
+        </div>
+    </ul>
+
+    <div class="oferta-detalle-container">
+        <!-- Header de la oferta -->
+        <div class="oferta-header">
+            <div class="header-content">
+                <img src="resources/Matia.png" alt="Matia Fundazioa" class="oferta-logo">
+                <div class="oferta-info">
+                    <h1>Técnico/a de Farmacia</h1>
+                    <span class="empresa">Matia Fundazioa</span>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <div>
+                                <strong>Donostia-San Sebastian</strong><br>
+                                Gipuzkoa<br>
+                                Presencial
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-briefcase info-icon"></i>
+                            <div>
+                                <strong>Contrato:</strong> Temporal<br>
+                                <strong>Jornada:</strong> Parcial
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-stethoscope info-icon"></i>
+                            <div>
+                                <strong>Sector Sanitario</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock info-icon"></i>
+                            <div>
+                                <strong>Experiencia mínima:</strong><br>
+                                Al menos 1 año
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descripción -->
+        <section class="content-section">
+            <h2 class="section-title">Descripción del puesto</h2>
+            <p>Matia somos una fundación con más de 130 años de experiencia en la prestación de servicios sociosanitarios en Gipuzkoa.</p>
+            <p>Nuestro propósito es acompañar a las personas en su proceso de envejecimiento para mejorar su bienestar, generando conocimiento y servicio personalizados que promuevan su autonomía y dignidad.</p>
+            <p>Si estás buscando un trabajo con proyección a futuro en un entorno donde el cuidado centrado en la persona es el valor principal, en <strong>MATIA FUNDAZIOA, te esperamos!</strong></p>
+            <p>Actualmente buscamos incorporar un <strong>Técnico/a de Farmacia.</strong></p>
+        </section>
+
+        <!-- Funciones -->
+        <section class="content-section">
+            <h2 class="section-title">Funciones principales</h2>
+            <ul class="bullet-list">
+                <li>Dispensar medicamentos a pacientes ingresados en el Hospital Bermingham y a las personas que viven en los centros residenciales de Matia.</li>
+                <li>Preparar los pedidos de medicamentos y material sanitario.</li>
+                <li>Recepción de pedidos y medicamentos y entrada en el sistema de gestión.</li>
+                <li>Apoyar en la gestión de medicamentos y material sanitario: control de almacenes, existencias, caducidades, adquisición y entrada de albaranes.</li>
+                <li>Mantener el orden en los almacenes.</li>
+                <li>Atender a los/as profesionales que acudan al servicio.</li>
+                <li>Atención telefónica.</li>
+            </ul>
+        </section>
+
+        <!-- Ofrecemos -->
+        <section class="content-section">
+            <h2 class="section-title">Ofrecemos</h2>
+            <ul class="bullet-list">
+                <li>Contrato temporal</li>
+                <li>Jornada parcial</li>
+                <li>Un entorno profesional comprometido con el cuidado y bienestar de las personas</li>
+            </ul>
+            <div class="vacancy-badge">Vacantes disponibles: 2</div>
+        </section>
+
+        <!-- Requisitos -->
+        <section class="content-section">
+            <h2 class="section-title">Requisitos</h2>
+            
+            <div class="highlight-box">
+                <h3>Requisitos mínimos:</h3>
+                <ul class="bullet-list">
+                    <li>Estudios: Técnico de Farmacia</li>
+                    <li>Experiencia mínima: Al menos 1 año</li>
+                </ul>
+            </div>
+            
+            <h3>Se valorará:</h3>
+            <ul class="bullet-list">
+                <li>Experiencia laboral previa en Servicios de Farmacia Hospitalarios.</li>
+                <li>Conocimiento del euskera.</li>
+                <li>Conocimientos informáticos (SIGECA, RPS, etc.).</li>
+            </ul>
+            
+            <p><strong>Perfil buscado:</strong> Persona con habilidades de comunicación, con interés e implicación, flexibilidad y adaptabilidad a los cambios, con actitud proactiva y que esté acostumbrado/a a trabajar en equipo.</p>
+        </section>
+
+        <!-- Botón de inscripción -->
+        <button class="btn-inscribirse" onclick="inscribirseOferta()">
+            Inscribirme en esta oferta
+        </button>
+    </div>
+
+    <script>
+        function inscribirseOferta() {
+            // Redirigir al formulario de CV con parámetros específicos de la oferta
+            window.location.href = 'cv.html?oferta=tecnico-farmacia-matia&empresa=Matia Fundazioa';
+        }
+
+        // Opcional: Mostrar confirmación antes de redirigir
+        function inscribirseOferta() {
+            if(confirm('¿Deseas inscribirte en esta oferta? Serás redirigido al formulario de CV.')) {
+                window.location.href = 'cv.html?oferta=tecnico-farmacia-matia&empresa=Matia Fundazioa';
+            }
+        }
+    </script>
+</body>
+</html>

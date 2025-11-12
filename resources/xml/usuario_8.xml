@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Elena Torres</nombre>
+  <edad>23</edad>
+  <email>elenatorres@gmail.com</email>
+  <telefono>682345678</telefono>
+  <experiencia>Prácticas en administración de redes</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Windows Server</curso>
+  </estudios>
+</usuario>

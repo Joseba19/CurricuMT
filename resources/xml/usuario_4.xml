@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Laura Gómez</nombre>
+  <edad>24</edad>
+  <email>lauragomez@gmail.com</email>
+  <telefono>642345678</telefono>
+  <experiencia>1 año como helpdesk</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Redes Cisco</curso>
+  </estudios>
+</usuario>

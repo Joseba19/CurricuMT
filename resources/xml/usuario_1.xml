@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Juan Pérez</nombre>
+  <edad>25</edad>
+  <email>juanperez@gmail.com</email>
+  <telefono>612345678</telefono>
+  <experiencia>2 años como técnico</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Python</curso>
+  </estudios>
+</usuario>

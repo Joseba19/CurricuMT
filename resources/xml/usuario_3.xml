@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Carlos Sánchez</nombre>
+  <edad>30</edad>
+  <email>carlossanchez@gmail.com</email>
+  <telefono>632345678</telefono>
+  <experiencia>5 años en soporte TI</experiencia>
+  <estudios>
+    <curso>SMR</curso>
+    <curso>Linux</curso>
+  </estudios>
+</usuario>

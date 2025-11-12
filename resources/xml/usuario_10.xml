@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Sara Castro</nombre>
+  <edad>31</edad>
+  <email>saracastro@gmail.com</email>
+  <telefono>602345678</telefono>
+  <experiencia>5 años en administración cloud</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>AWS</curso>
+  </estudios>
+</usuario>

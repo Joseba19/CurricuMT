@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>María López</nombre>
+  <edad>28</edad>
+  <email>marialopez@gmail.com</email>
+  <telefono>622345678</telefono>
+  <experiencia>3 años como administradora de sistemas</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Bases de Datos</curso>
+  </estudios>
+</usuario>

@@ -1,0 +1,36 @@
+/* Barra de navegación */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #1c3bb7, #3568e5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.links {
+    display: flex;
+    margin-left: 10px;
+}
+
+ul li .paginas {
+    color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+    display: block;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(2px);
+}
+
+ul li .paginas:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.logo {
+    margin-right: 10px;
+}

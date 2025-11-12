@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        .container-table {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        table {
+            margin-top: 350px;
+            width: 800px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+        thead th {
+            background-color: #2851ce;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <ul class="navbar">
+        <div class="links">
+            <li><a href="index.html" class="paginas">Inicio</a></li>
+            <li><a href="ofertas.html" class="paginas">Ofertas de Trabajo</a></li>
+            <li><a href="cv.html" class="paginas">Sube tu CV</a></li>
+            <li><a href="admin.html" class="paginas">Administradores</a></li>
+        </div>
+        <div class="logo">
+            <li><a href="index.html"><img src="resources/logoPositivo.png" alt=""
+                        style="height:50px; vertical-align:middle;"></a></li>
+        </div>
+    </ul>
+    <div class="container">
+        <div class="container-table">
+            <table id="tablaUsuarios" border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Experiencia</th>
+                        <th>Estudios</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script>
+    async function cargarUsuario(xmlFile) {
+        const response = await fetch(xmlFile);
+        const xmlText = await response.text();
+
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(xmlText, "application/xml");
+
+        const nombre = xml.querySelector("nombre")?.textContent || "";
+        const edad = xml.querySelector("edad")?.textContent || "";
+        const email = xml.querySelector("email")?.textContent || "";
+        const telefono = xml.querySelector("telefono")?.textContent || "";
+        const experiencia = xml.querySelector("experiencia")?.textContent || "";
+
+        const estudios = Array.from(xml.querySelectorAll("estudios curso"))
+            .map(curso => curso.textContent)
+            .join(", ");
+
+        const tbody = document.querySelector("#tablaUsuarios tbody");
+        const fila = `<tr>
+                  <td>${nombre}</td>
+                  <td>${edad}</td>
+                  <td>${email}</td>
+                  <td>${telefono}</td>
+                  <td>${experiencia}</td>
+                  <td>${estudios}</td>
+                </tr>`;
+        tbody.insertAdjacentHTML("beforeend", fila);
+    }
+
+    // Ejemplo de carga de dos archivos:
+    cargarUsuario("resources/xml/usuario_1.xml");
+    cargarUsuario("resources/xml/usuario_2.xml");
+    cargarUsuario("resources/xml/usuario_3.xml");
+    cargarUsuario("resources/xml/usuario_4.xml");
+    cargarUsuario("resources/xml/usuario_5.xml");
+    cargarUsuario("resources/xml/usuario_6.xml");
+    cargarUsuario("resources/xml/usuario_7.xml");
+    cargarUsuario("resources/xml/usuario_8.xml");
+    cargarUsuario("resources/xml/usuario_9.xml");
+    cargarUsuario("resources/xml/usuario_10.xml");
+
+
+</script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administradores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <ul class="navbar">
+        <div class="links">
+            <li><a href="index.html" class="paginas">Inicio</a></li>
+            <li><a href="ofertas.html" class="paginas">Ofertas de Trabajo</a></li>
+            <li><a href="cv.html" class="paginas">Sube tu CV</a></li>
+            <li><a href="InicioSesion.html" class="paginas">Administradores</a></li>
+        </div>
+        <div class="logo">
+            <li><a href="index.html"><img src="resources/logoPositivo.png" alt=""
+                        style="height:50px; vertical-align:middle;"></a></li>
+        </div>
+    </ul>
+
+    <div class="containerIniSesion">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <form name="login" method="post" onsubmit="return validarPassword();">
+                <div class="form-group">
+                    <label for="user">Usuario</label>
+                    <input type="text" name="user" id="user" class="form-control">
+                </div>
+                <div class="divPsw">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+                <div class="divSubmit">
+                    <input type="submit" value="Entrar" class="submit-login">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validarPassword(){
+            const user = document.getElementById('user').value
+            const psw = document.getElementById('password').value
+            
+            if (user == 'admin' && psw == 'admin1234'){
+                window.location.assign('http://127.0.0.1:5500/admin.html');
+                return false;
+            }
+            // nombre de usuario: admin
+            // contraseña: admin1234
+            // cambiar si se quiere pero CAMBIAR a corde los comentarios pls
+            else if (user != 'admin' || psw != 'admin1234'){
+                alert('El usuario o la contraseña introducidos son incorrectos.')
+            }
+        }
+    </script>
+</body>
+
+</html>

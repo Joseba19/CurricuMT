@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>David Ruiz</nombre>
+  <edad>27</edad>
+  <email>davidruiz@gmail.com</email>
+  <telefono>652345678</telefono>
+  <experiencia>4 años en ciberseguridad</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Ethical Hacking</curso>
+  </estudios>
+</usuario>

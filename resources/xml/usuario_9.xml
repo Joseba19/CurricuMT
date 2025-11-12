@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Mario Herrera</nombre>
+  <edad>29</edad>
+  <email>marioherrera@gmail.com</email>
+  <telefono>692345678</telefono>
+  <experiencia>6 años en mantenimiento informático</experiencia>
+  <estudios>
+    <curso>SMR</curso>
+    <curso>Hardware</curso>
+  </estudios>
+</usuario>

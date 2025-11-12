@@ -1,0 +1,11 @@
+<usuario>
+  <nombre>Jorge Martínez</nombre>
+  <edad>32</edad>
+  <email>jorgemartinez@gmail.com</email>
+  <telefono>672345678</telefono>
+  <experiencia>7 años como técnico de sistemas</experiencia>
+  <estudios>
+    <curso>ASIR</curso>
+    <curso>Virtualización</curso>
+  </estudios>
+</usuario>
