@@ -47,7 +47,7 @@
 .formulario fieldset {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 0px 15px 15px;
+    padding: 15px;
 }
 
 .formulario fieldset label {
@@ -119,4 +119,9 @@
     border-radius: 6px;
     margin-top: 10px;
     font-size: 14px;
+}
+
+.of{
+    display: flex;
+    flex-direction: column;
 }

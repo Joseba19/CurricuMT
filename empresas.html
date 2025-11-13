@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurricuMT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/cv.css">
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <div class="links">
+            <li><a href="index.html" class="paginas">Inicio</a></li>
+            <li><a href="ofertas.html" class="paginas">Ofertas de Trabajo</a></li>
+            <li><a href="cv.html" class="paginas">Sube tu CV</a></li>
+            <li><a href="empresas.html" class="paginas">Empresas</a></li>
+            <li><a href="InicioSesion.html" class="paginas">Administradores</a></li>
+        </div>
+        <div class="logo">
+            <li><a href="index.html"><img src="resources/logoPositivo.png" alt=""
+                        style="height:50px; vertical-align:middle;"></a></li>
+        </div>
+    </ul>
+
+    <h1>Empresa contratante</h1><br>
+    <form action="https://echo.free.beeceptor.com" method="post" class="formCV">
+        <div class="formulario">
+            <label>Descripción *</label>
+            <textarea name="descripcion" id="descripcion" class="form-control"
+                placeholder="Describe el puesto de trabajo, responsabilidades principales, etc." required></textarea> <br>
+
+            <label>Funciones *</label>
+            <textarea name="funciones" id="funciones" class="form-control"
+                placeholder="Detalla las funciones específicas del puesto" required></textarea> <br>
+
+            <label>Qué se ofrece *</label>
+            <fieldset>
+                <div class="estudios">
+                    <label for="trabajadores"><b>Número de vacantes:</b></label>
+                    <input type="number" name="trabajadores" id="trabajadores" min="1" max="100" value="1"
+                        class="form-control"> <br> <br>
+
+                    <label for="jornada"><b>Tipo de jornada:</b></label>
+                    <select name="jornada" id="jornada" class="form-control" required>
+                        <option value="" disabled selected>Selecciona el tipo de jornada</option>
+                        <option value="completa">Jornada Completa</option>
+                        <option value="parcial">Jornada Parcial</option>
+                    </select> <br> <br>
+
+                    <label for="tipoContrato"><b>Tipo de contrato:</b></label>
+                    <select name="tipoContrato" id="tipoContrato" class="form-control" required>
+                        <option value="" disabled selected>Selecciona el tipo de contrato</option>
+                        <option value="format">Contrato Formativo</option>
+                        <option value="inde">Contrato Indefinido</option>
+                        <option value="temp">Contrato Temporal</option>
+                        <option value="practicas">Contrato en Prácticas</option>
+                        <option value="Otro">Otro tipo</option>
+                    </select> <br> <br>
+
+                    <label for="horario"><b>Tipo de horario:</b></label>
+                    <select name="horario" id="horario" class="form-control" required>
+                        <option value="" disabled selected>Selecciona el tipo de horario</option>
+                        <option value="continuo">Horario Continuo</option>
+                        <option value="partido">Horario Partido</option>
+                        <option value="3turnos">3 Turnos</option>
+                        <option value="4turnos">4 Turnos</option>
+                        <option value="5turnos">5 Turnos</option>
+                        <option value="otro">Otro Horario</option>
+                    </select> <br> <br>
+
+                    <label for="sueldo"><b>Sueldo:</b></label>
+                    <input type="text" placeholder="Ej: 25.000€ - 30.000€ anuales" name="sueldo" id="sueldo"
+                        class="form-control">
+                </div>
+            </fieldset> <br>
+
+            <label>Requisitos *</label>
+            <fieldset>
+                <div class="estudios">
+                    <label for="expMin"><b>Experiencia mínima (en años):</b></label>
+                    <input type="number" name="expMin" id="expMin" min="0" max="30" value="0" class="form-control"> <br> <br>
+
+                    <label for="disponibilidad"><b>Disponibilidad:</b></label>
+                    <select name="disponibilidad" id="disponibilidad" class="form-control" required>
+                        <option value="" disabled selected>Selecciona la disponibilidad</option>
+                        <option value="inmediata">Inmediata</option>
+                        <option value="noUrge">No Urgente</option>
+                        <option value="fecha">A partir de fecha específica</option>
+                    </select> <br> <br>
+
+                    <label for="estMin"><b>Estudios mínimos:</b></label>
+                    <select name="estMin" id="estMin" class="form-control" required>
+                        <option value="" disabled selected>Selecciona el nivel de estudios</option>
+                        <option value="sinEstudios">Sin Estudios</option>
+                        <option value="eso">Educación Secundaria Obligatoria (ESO)</option>
+                        <option value="bachiller">Bachiller</option>
+                        <option value="fpmedio">FP Grado Medio</option>
+                        <option value="fpsuperior">FP Grado Superior</option>
+                        <option value="universitario">Título Universitario</option>
+                        <option value="master">Máster o Postgrado</option>
+                    </select> <br> <br>
+
+                    <label for="conocimientos"><b>Conocimientos necesarios:</b></label>
+                    <textarea name="conocimientos" id="conocimientos" class="form-control ancho"
+                        placeholder="Especifica los conocimientos técnicos requeridos"></textarea>
+
+                    <label for="otrosRequisitos"><b>Otros requisitos:</b></label>
+                    <textarea name="otrosRequisitos" id="otrosRequisitos" class="form-control ancho"
+                        placeholder="Idiomas, habilidades personales, etc."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="sub">Guardar Oferta</button>
+        </div>
+    </form>
+</body>
+
+</html>
