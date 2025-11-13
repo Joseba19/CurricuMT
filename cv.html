@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sube tu CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/cv.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -34,16 +34,20 @@
             <div class="formulario">
 
                 <label>Nombre completo *</label>
-                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre Apellido" required> <br>
+                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre Apellido"
+                    required> <br>
 
                 <label>Edad *</label>
-                <input class="form-control" type="number" id="edad" name="edad" min="18" max="60" value="20" required> <br>
+                <input class="form-control" type="number" id="edad" name="edad" min="18" max="60" value="20" required>
+                <br>
 
                 <label>Correo electronico *</label>
-                <input class="form-control" type="email" id="email" name="email" placeholder="correo@gmail.com" required> <br>
+                <input class="form-control" type="email" id="email" name="email" placeholder="correo@gmail.com"
+                    required> <br>
 
                 <label>Teléfono</label>
-                <input class="form-control" type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}"> <br>
+                <input class="form-control" type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}">
+                <br>
 
                 <label>Experiencia laboral *</label>
                 <textarea name="experiencia" id="experiencia" class="form-control" required></textarea> <br>
@@ -52,21 +56,26 @@
                 <fieldset>
                     <div class="estudios">
                         <p>FP:</p>
-                        <input type="checkbox" id="curso1" name="estudios" value="Tecnico en sistemas Microinformáticos y Redes">
+                        <input type="checkbox" id="curso1" name="estudios"
+                            value="Tecnico en sistemas Microinformáticos y Redes">
                         <label for="curso1">Tecnico en sistemas Microinformáticos y Redes</label><br>
                         <input type="checkbox" id="curso2" name="estudios" value="Multiplataforma (DAM)">
                         <label for="curso2">Multiplataforma (DAM)</label><br>
                         <input type="checkbox" id="curso3" name="estudios" value="Desarrollo de Aplicaciones Web (DAW)">
                         <label for="curso3">Desarrollo de Aplicaciones Web (DAW)</label><br>
-                        <input type="checkbox" id="curso4" name="estudios" value="Administración de sistemas informáticos en red (ASIR)">
+                        <input type="checkbox" id="curso4" name="estudios"
+                            value="Administración de sistemas informáticos en red (ASIR)">
                         <label for="curso4">Administración de sistemas informáticos en red (ASIR)</label><br>
 
                         <p>Especializaciones:</p>
-                        <input type="checkbox" id="curso5" name="estudios" value="Ciberseguridad en entornos de las tecnologias de la información">
+                        <input type="checkbox" id="curso5" name="estudios"
+                            value="Ciberseguridad en entornos de las tecnologias de la información">
                         <label for="curso5">Ciberseguridad en entornos de las tecnologias de la información</label><br>
-                        <input type="checkbox" id="curso6" name="estudios" value="Desarrollo de aplicaciones en lenguaje python">
+                        <input type="checkbox" id="curso6" name="estudios"
+                            value="Desarrollo de aplicaciones en lenguaje python">
                         <label for="curso6">Desarrollo de aplicaciones en lenguaje python</label><br>
-                        <input type="checkbox" id="curso7" name="estudios" value="Desarrollo de videojuegos y realidad virtual">
+                        <input type="checkbox" id="curso7" name="estudios"
+                            value="Desarrollo de videojuegos y realidad virtual">
                         <label for="curso7">Desarrollo de videojuegos y realidad virtual</label><br>
                         <input type="checkbox" id="curso8" name="estudios" value="Inteligencia artificial y Big data">
                         <label for="curso8">Inteligencia artificial y Big data</label><br>
@@ -83,17 +92,20 @@
                 <div id="statusMessage" style="margin-top: 15px;"></div>
             </div>
         </form>
-
     </div>
+
+    <footer>
+        © 2025 CurricuMT
+    </footer>
 
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
+
     <script type="text/javascript">
         // Inicializar EmailJS
-        (function() {
+        (function () {
             emailjs.init({
-              publicKey: "NodgzyWRmUnC0y1qD",
+                publicKey: "NodgzyWRmUnC0y1qD",
             });
         })();
 
@@ -124,8 +136,8 @@
         });
 
         // Manejo del envío del formulario
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
 
                 const statusMessage = document.getElementById('statusMessage');

@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -73,4 +73,16 @@ button:hover {
     outline: none;
     border-color: #3568e5;
     box-shadow: 0 0 0 3px rgba(53, 104, 229, 0.1);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 0;
+    background: linear-gradient(90deg, #1c3bb7, #3568e5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #f0f5ff;
 }
