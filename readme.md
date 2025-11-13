@@ -42,7 +42,11 @@ Cada integrante del grupo ha tenido un rol definido dentro del desarrollo del pr
 1.  Clonar el repositorio o descargar el proyecto.
     
 2.  Abrir el archivo index.html en un navegador web.
-    
+
+**Visualiza la web en**
+------------------------------
+
+https://joseba19.github.io/CurricuMT/
 
 **📄 Licencia**
 ---------------
