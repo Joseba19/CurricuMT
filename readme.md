@@ -1,4 +1,4 @@
-**CurricuMT🌐**
+**CurricuMT**
 ===============
 
 **Proyecto realizado para el Reto 2 del ciclo formativo DAM (1DM3)**
